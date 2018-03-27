@@ -101,10 +101,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Landing Page | H | 2hrs| So far 1hrs | hrs |
 | Fighting Page | H | 6hrs| hrs | hrs |
-| Exploration Page | H | 2shrs| hrs | hrs |
-| Score Page | 2H | hrs| hrs | hrs |
-| Potions Page | 4H | hrs| hrs | hrs |
-| Total |  | hrs| hrs | hrs |
+| Exploration Page | H | 2hrs| hrs | hrs |
+| Score Page | 2H | hrs| 2hrs | hrs |
+| Potions Page | 4H | hrs| 6hrs | hrs |
+| Total |  | hrs| 12hrs | hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
