@@ -26,11 +26,11 @@ Include images of your wireframes.
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
-1. Landing page
+1. Landing page (most important)
 2. Fighting scene
 3. Exploration
 4. Potions (finding potions that can heal the player)
-5. Exp (experience points for the user to level up)
+5. Exp (experience points for the user to level up (least important))
 
 ## Game Components
 
@@ -99,9 +99,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Landing Page | H | 2hrs| 1hrs | hrs |
-| Fighting Page | H | hrs| hrs | hrs |
-| Exploration Page | H | hrs| hrs | rs |
+| Landing Page | H | 2hrs| So far 1hrs | hrs |
+| Fighting Page | H | 6hrs| hrs | hrs |
+| Exploration Page | H | 2shrs| hrs | hrs |
+| Score Page | 2H | hrs| hrs | hrs |
+| Potions Page | 4H | hrs| hrs | hrs |
 | Total |  | hrs| hrs | hrs |
 
 ## Helper Functions
