@@ -87,7 +87,8 @@ Include the full list of features that you are considering for POST MVP
 
 Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method. 
     Multiple functions.
-    DOM: getting nodes and storing them to use them such as player.
+    JQuery DOM: getting nodes and storing them to use them such as player.
+    CSS transition/ animations
     If/else statements for 
     Extends, constructor, super for same type enemies w/ diff stats(lvls, attack, and hp)
     .innerHTML change for hp level
