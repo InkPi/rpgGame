@@ -22,6 +22,7 @@ of cute stuff and kill all cute stuff you encountered.
 ## Wireframes
 
 Include images of your wireframes. 
+![wireframe image](../images/wireframe.jpg)
 
 ## Priority Matrix
 
