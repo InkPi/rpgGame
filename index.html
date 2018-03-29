@@ -4,8 +4,11 @@
   <title>Cute RPG</title>
   <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
-<body class= "landing fighting">
-<div>
+
+
+<body>
+
+<div class= "landing">
   <h1>No More Cuteness</h1>
   <form>
     <input id= "name" type="text">
@@ -13,12 +16,24 @@
     <input id = "buttonS" type="button" value="Submit Name">
   </form>
 </div>
-<div class="fight">
+
+<div class="fighting">
+  <div class="enemyDiv">
+    <h3 class="monsterName"></h3>
+    <p class= "lvl"></p>
+    <p class = "hp"></p>
+  </div>
+    <div class="playerDiv">
+    <h3 class="playerName"></h3>
+    <p class= "lvl"></p>
+    <p class = "hp"></p>
+  </div>
+</div>
+<div class="mapEx">
+
 </div>
   <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="src/app.js"></script>
 </body>
 </html>

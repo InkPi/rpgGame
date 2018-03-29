@@ -1,9 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
 .landing {
-  width: 100%;
-  height: 100%;
   background-color: pink;
-  margin: 0;
-  padding: 0;
+/*  https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content*/
+  display:block;
+  overflow:auto;
+  height: 100vh;
+  /*^had help from someone;
+  vh helped expand the height of div to viewport height*/
 }
 
 h1 {
@@ -36,5 +42,37 @@ form {
 
 
 .fighting {
-  background-color: red;
+  background-color: white;
+}
+/*https://www.w3schools.com/cssref/pr_pos_clip.asp*/
+.playerDiv {
+  position: fixed;
+  margin-top: 400px;
+  margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*-webkit-transform: translate(-10%,-10%);
+  -ms-transform: translate(-10%,-10%);
+  transform: translate(-10%,-10%);*/
+}
+
+.playerDiv img {
+  width: 300px;
+  height: auto;
+}
+
+.enemyDiv {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-left: 900px;
+}
+
+.enemyDiv img{
+  position: fixed;
+  height: 300px;
+  width: 300px;
 }
