@@ -55,12 +55,12 @@ $(document).ready(function() {
 
   //Get enemy div block and append random monster img inside
   var enemyDivs = $('.enemyDiv');
+  $(enemyDivs).append(randomMonster);
 
   //Get p.monHp for enemy and give data hp, attk
   var enemyP = $('.monHp');
-  $(enemyP).data('hp', 100).text(100); //can replace 100 w/ random# var
+  $(enemyP).data('hp', 100);
   $(enemyP).data('attk', 20);
-
 
 
 
@@ -68,68 +68,45 @@ $(document).ready(function() {
 
   /* Player Attacks Enemy!! */
   $('#playerAttk').on('click', function(){
-    var $this = $(this);
+
     /* math here */
     //keep decrement enemy hp by player attk
-
-    // for (let i=43; i => 0; i++) {
-
+    for (let i=43; i => 0; i++) {
     // get the enemy's hp
     const enemyHP = $(enemyP).data('hp');
     //get player's attk
     const playerDmg = $(playerAttk).data('attk');
     // do the math and minus hp with player attk
     var enemyHpDmg = enemyHP - playerDmg;// $() made it an obj!
-    //text enemy left over pts and dialog
-    $(enemyP).data('hp', enemyHpDmg).text(enemyHpDmg); //had help with this
-    // enemyP.text(`${enemyHpDmg}`);
+    enemyP.append(`${enemyHpDmg}`);
+  }
 
-    //css movement from attack
-
-    //hp bar when got attk down + exploring map if I have time
-  // }
-
-    //did var pdamage
-    //Text when attack monster
-    $(enemyHpDmg).each(function() {
-        var enemyPara = $('.monPara');
-        $(enemyPara).text('You attacked that cute monster! 43 attk pts');
-    })
-
-    //if damage=0 alert "won"
-    //then reload the whole page
-    if (enemyHpDmg <= 0) {
-      window.alert('you won!'); //had to add window! Solved it!
-      window.location.reload(true); //did this before but got it from: https://developer.mozilla.org/en-US/docs/Web/API/Location/reload
-    }
-
-    //computer generate enemy attack now! return enemy attk func here
-
-    // var $this = $(this);
-    // if(this.data('clicked')) {
-    //   console.log('enemy attk');
-    // }
-    if($this.data('clicked')) {
-      $(enemyHpDmg).each(function() {
-      console.log("atkk");
-    })
-    }
-  });//player attk onclick
+    //var playerDmg =  $('.playerDiv').text($(playerAttk).attr('data-attk'));
 
 
-  /*Now Enemy Attacks Player!*/
-
-  //random generated hp and attk
-
-  //Minus player hp after player attacks: know it does something with if
-   //https://stackoverflow.com/questions/6081608/jquery-check-if-it-is-clicked-or-not
-
-  //css effect of attk
-  //hp txt and dialog from attack
+    // $('.monHp').append(enemyDivs);
+    return enemyP;
 
 
+    console.log(enemyP); //did var pdamage
+    // pdamage.append('.enemyDiv .hp').innerHTML;
 
-  });//button clicked
+  })
+
+
+  // bunny.attr('hp', bunnyHP);
+  // bunny.attr('attk', bunnyAttk);
+  // var bunnyLvl = Math.floor(Math.random() * (2 - 0));
+
+  //  function monsterLevel(min, max) {
+  //     Math.floor(Math.random() * (max - min) + min); //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+  //  }
+  // function monsterHP(min, max) {
+  //     Math.floor(Math.random() * (max - min) + min);
+  //  }
+// for(let i=0; i<)
+
+  });
 
 
 
