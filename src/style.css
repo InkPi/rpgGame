@@ -42,6 +42,7 @@ form {
 
 
 .fighting {
+  /*received some help with this*/
   background: url('../images/battleBg.png') no-repeat fixed center;
   background-size: cover;
   z-index: -20;
@@ -55,9 +56,6 @@ form {
   margin-left: 20px;
   background-size: cover;
   background-repeat: no-repeat;
-  /*-webkit-transform: translate(-10%,-10%);
-  -ms-transform: translate(-10%,-10%);
-  transform: translate(-10%,-10%);*/
 }
 
 .playerDiv img {
@@ -86,3 +84,7 @@ form {
   from {;}
   to {;}
 }*/
+
+/*Enemy Died Hit Effect!*/
+/*https://www.tutorialspoint.com/css/css_animation_fade_in.htm*/
+
