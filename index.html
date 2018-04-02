@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<!-- All Images are borrowed from the internet.
+              I do not own any of them.
+                                    -->
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Cute RPG</title>
@@ -11,7 +14,7 @@
 <div class= "landing">
   <h1>No More Cuteness</h1>
   <form>
-    <input id= "name" type="text">
+    <input id= "name" type="text"> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button -->
     <br>
     <input id = "buttonS" type="button" value="Submit Name">
   </form>
@@ -19,22 +22,28 @@
 
 <div class="fighting">
   <div class="enemyDiv">
-    <h3 class="monsterName"></h3>
-    <p class= "lvl"></p>
-    <p class = "monHp"></p> <!-- jquery animation -->
-    <p class = "monAttk"></p>
-    <p class = "monPara"></p>
+    <div class="dialogue">
+      <div class="monsterName"></div>
+      <p class= "lvl"></p>
+      <p class = "monHp"></p> <!-- jquery animation -->
+      <p class = "monAttk"></p>
+     <p class = "monPara"></p>
   </div>
-    <div class="playerDiv">
-    <h3 class="playerName"></h3>
-    <p class= "lvl"></p>
-    <p id="hp">HP: 620</p>
-    <p id="playerAttk">Attk: 43<a href="#playerAttk">Attack</a></p>
-    <p class= "playerPara"></p>
+  </div>
+  <div class="playerDiv">
+    <div class="dialogue">
+      <h3 class="playerName"></h3>
+      <p class= "lvl"></p>
+      <p id="hp">HP: 620</p>
+      <p id="playerAttk">Attk: 43<a href="#playerAttk">Attack</a></p>
+      <p class= "playerPara"></p>
+    <div class="playerSide"></div>
+  </div>
   </div>
 </div>
 <div class="mapEx">
 <!-- addevent listener on key press switch statements -->
+  <img class="characterRun" src="images/character1.gif"></img>
 </div>
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"></script>

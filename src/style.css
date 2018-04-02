@@ -1,7 +1,15 @@
+/*
+    All Images are borrowed from the internet.
+    I do not own any of them.
+                                 */
+
+/*Set 0 empty space border for body*/ /**/
 body {
   margin: 0px;
   padding: 0px;
 }
+
+/*Landing Page styling*/
 .landing {
   background-color: pink;
 /*  https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content*/
@@ -18,6 +26,8 @@ h1 {
   text-align: center;
   top: 100px;
 }
+
+
 
 form {
   position: relative;
@@ -39,7 +49,31 @@ form {
   font-size: 20px;
 }
 
+/*
 
+      Exploring Map #3 Importance
+
+                             */
+.mapEx {
+  /*using same css code of .fighting*/
+  background: url('../images/map.png') no-repeat fixed center;
+  background-size: cover;
+  z-index: -20;
+  height: 100vh;
+}
+
+.characterRun {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*
+
+      Fighting Scene #2 Importance
+
+                             */
 
 .fighting {
   /*received some help with this*/
@@ -49,19 +83,56 @@ form {
   height: 100vh;
 }
 
+.dialogue {
+  background-color: white;
+}
+
 /*https://www.w3schools.com/cssref/pr_pos_clip.asp*/
 .playerDiv {
-  position: fixed;
-  margin-top: 300px;
+  position: relative;
+  padding-top: 100px;
   margin-left: 20px;
+  height: 500px;
+  width: 500px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.playerDiv img {
+.playerSide {
+  background-image: url('../images/characterSide.png');
+  position: absolute;
+  margin-top: 177px;
   width: 300px;
-  height: auto;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/*Player Got Hit Effect!*/
+/*Position absolute for a div you want to move
+Position relative for a div you are moving it in
+declare a class with a specific top-right dimensions
+on a click event assign this class to a div you want to move*/
+/*http://blog.teamtreehouse.com/using-jquery-to-detect-when-css3-animations-and-transitions-end*/
+@keyframes gothitP {
+  0% {  margin-left: 0}
+  25% {   margin-left: 20px; }
+  50% {   margin-left: 0; }
+  75% {   margin-left: -20px; }
+  100%{  margin-left: 0;}
+}
+.playerMove img {
+
+  /*https://www.w3schools.com/cssref/css_selectors.asp*/
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/animation*/
+
+  animation: gothitP 3s linear 1s 1 alternate; /*animation 1nce*/
+  /*animation: gothitP 2s linear 1s infinite alternate;*/
+}
+
+
+
+
 
 .enemyDiv {
   position: fixed;
@@ -79,11 +150,9 @@ form {
   width: 300px;
 }
 
-/*Got Hit Effect!*/
-/*@keyframes gothit {
-  from {;}
-  to {;}
-}*/
+
+
+
 
 /*Enemy Died Hit Effect!*/
 /*https://www.tutorialspoint.com/css/css_animation_fade_in.htm*/
