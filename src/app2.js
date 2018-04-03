@@ -7,91 +7,86 @@
 // });
 
 
-$(document).ready(function() {
-  const $landing = $('.landing'); //put in var to save memory
+$(document).ready(() => {
+  const $landing = $('.landing'); // put in var to save memory
   const $fighting = $('.fighting');
   const $mapEx = $('.mapEx');
 
- $landing.show();
- $fighting.hide();
- $mapEx.hide();
+  $landing.show();
+  $fighting.hide();
+  $mapEx.hide();
   // let username = $('#name');
 
-  $('#buttonS').on('click', function() { //http://api.jquery.com/on/
-    /*Hiding everything but fighting*/
+  $('#buttonS').on('click', () => { // http://api.jquery.com/on/
+    /* Hiding everything but fighting */
     $landing.hide();
     $mapEx.hide();
     $fighting.show();
-    $("h1, input, #buttonS").remove();
+    $('h1, input, #buttonS').remove();
 
-    /*giving attributes to player + append*/
-    //https://stackoverflow.com/questions/554273/changing-the-image-source-using-jquery
-    //had help with image src, couldn't find file from '../images/character.png'
+    /* giving attributes to player + append */
+    // https://stackoverflow.com/questions/554273/changing-the-image-source-using-jquery
+    // had help with image src, couldn't find file from '../images/character.png'
 
-    //https://stackoverflow.com/questions/20277052/how-to-make-a-health-bar
-    /*player lvl 20
+    // https://stackoverflow.com/questions/20277052/how-to-make-a-health-bar
+    /* player lvl 20
       player hp: 620 attk:43
       lvl 1 hp: 50,
       Every lvl hp += 30 after lvl1,
       lvl 1 attk: 5,
-      Every lvl attk += 2 after lvl1*/
-    let playerSide = $('<img>').attr('src', 'images/characterSide.png');
+      Every lvl attk += 2 after lvl1 */
+    const playerSide = $('<img>').attr('src', 'images/characterSide.png');
     playerSide.attr('class', 'playerSide');
-    let playerAttk = $('#playerAttk');
-    //https://api.jquery.com/data/
+    const playerAttk = $('#playerAttk');
+    // https://api.jquery.com/data/
     $(playerSide).data('hp', 620);
     $(playerAttk).data('attk', 43);
 
-   $('.playerDiv').append(playerSide);
+    $('.playerDiv').append(playerSide);
 
-/*Create different random monsters, random lvl, hp, + attack
-  Hp + attack depend on level*/
-  var bunny = $('<img>').attr('src', 'images/bunny.gif'); //only hp
-  var mewmew = $('<img>').attr('src', 'images/mewmew.gif');
-  var iceCream = $('<img>').attr('src', 'images/ice_creamMons.gif');
-  var monsterArray = [bunny, mewmew, iceCream];
-  var randomMonster = Math.floor(Math.random(monsterArray) * (2 - 0)); //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-  $('.enemyDiv').append(monsterArray[randomMonster]);
+    /* Create different random monsters, random lvl, hp, + attack
+  Hp + attack depend on level */
+    const bunny = $('<img>').attr('src', 'images/bunny.gif'); // only hp
+    const mewmew = $('<img>').attr('src', 'images/mewmew.gif');
+    const iceCream = $('<img>').attr('src', 'images/ice_creamMons.gif');
+    const monsterArray = [bunny, mewmew, iceCream];
+    const randomMonster = Math.floor(Math.random(monsterArray) * (2 - 0)); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    $('.enemyDiv').append(monsterArray[randomMonster]);
 
-  //Get enemy div block and append random monster img inside
-  var enemyDivs = $('.enemyDiv');
-  $(enemyDivs).append(randomMonster);
+    // Get enemy div block and append random monster img inside
+    const enemyDivs = $('.enemyDiv');
+    $(enemyDivs).append(randomMonster);
 
-  //Get p.monHp for enemy and give data hp, attk
-  var enemyP = $('.monHp');
-  $(enemyP).data('hp', 100);
-  $(enemyP).data('attk', 20);
-
-
+    // Get p.monHp for enemy and give data hp, attk
+    const enemyP = $('.monHp');
+    $(enemyP).data('hp', 100);
+    $(enemyP).data('attk', 20);
 
 
-
-  /* Player Attacks Enemy!! */
-  $('#playerAttk').on('click', function(){
-
+    /* Player Attacks Enemy!! */
+    $('#playerAttk').on('click', () => {
     /* math here */
-    //keep decrement enemy hp by player attk
-    for (let i=43; i => 0; i++) {
-    // get the enemy's hp
-    const enemyHP = $(enemyP).data('hp');
-    //get player's attk
-    const playerDmg = $(playerAttk).data('attk');
-    // do the math and minus hp with player attk
-    var enemyHpDmg = enemyHP - playerDmg;// $() made it an obj!
-    enemyP.append(`${enemyHpDmg}`);
-  }
+    // keep decrement enemy hp by player attk
+      for (let i = 43; i => 0; i++) {
+        // get the enemy's hp
+        const enemyHP = $(enemyP).data('hp');
+        // get player's attk
+        const playerDmg = $(playerAttk).data('attk');
+        // do the math and minus hp with player attk
+        const enemyHpDmg = enemyHP - playerDmg;// $() made it an obj!
+        enemyP.append(`${enemyHpDmg}`);
+      }
 
-    //var playerDmg =  $('.playerDiv').text($(playerAttk).attr('data-attk'));
-
-
-    // $('.monHp').append(enemyDivs);
-    return enemyP;
+      // var playerDmg =  $('.playerDiv').text($(playerAttk).attr('data-attk'));
 
 
-    console.log(enemyP); //did var pdamage
+      // $('.monHp').append(enemyDivs);
+      return enemyP;
+
+
+      console.log(enemyP); // did var pdamage
     // pdamage.append('.enemyDiv .hp').innerHTML;
-
-  })
+    });
 
 
   // bunny.attr('hp', bunnyHP);
@@ -104,19 +99,16 @@ $(document).ready(function() {
   // function monsterHP(min, max) {
   //     Math.floor(Math.random() * (max - min) + min);
   //  }
-// for(let i=0; i<)
-
+    // for(let i=0; i<)
   });
 
 
-
-
-  //Exploration
-      //let player = $('<img>').attr('src', 'images/character1.gif');
-      //   $('.playerDiv').append(player);
+  // Exploration
+  // let player = $('<img>').attr('src', 'images/character1.gif');
+  //   $('.playerDiv').append(player);
   // const playerName = $('#name').innerHTML();
 
-  //exploration link helps:
+  // exploration link helps:
   /* http://jsfiddle.net/jakecigar/u2dtep5n/
   http://api.jquery.com/animate/ */
 });

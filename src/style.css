@@ -3,13 +3,26 @@
     I do not own any of them.
                                  */
 
-/*Set 0 empty space border for body*/ /**/
+/*https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+@media only screen
+  and (min-device-width: 768px;)
+  and (max-device-width: 1024px)
+   {
+    div.landing, div.mapEx, div.fighting  {
+    min-width: 760;
+    max-width: 1020px;
+    /*https://www.w3schools.com/cssref/css_units.asp*/
+    }
+}
+
+
+/*Set 0 empty space border for body*/
 body {
   margin: 0px;
   padding: 0px;
 }
 
-/*Landing Page styling*/
+/*Landing Page Styling/ Global Styling*/
 .landing {
   background-color: pink;
 /*  https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content*/
@@ -127,13 +140,9 @@ on a click event assign this class to a div you want to move*/
   /*https://developer.mozilla.org/en-US/docs/Web/CSS/animation*/
 
   animation: gothitP 3s linear 1s 1 alternate; /*animation 1nce*/
-  /*animation: gothitP 2s linear 1s infinite alternate;*/
 }
 
-
-
-
-
+/*Enemy Container + img*/
 .enemyDiv {
   position: fixed;
   height: 300px;
@@ -149,11 +158,3 @@ on a click event assign this class to a div you want to move*/
   height: 300px;
   width: 300px;
 }
-
-
-
-
-
-/*Enemy Died Hit Effect!*/
-/*https://www.tutorialspoint.com/css/css_animation_fade_in.htm*/
-
