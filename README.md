@@ -1,4 +1,6 @@
-Published and Deployed Project View: https://inkpi.github.io/rpgGame/
+Published and Deployed Project View: 
+https://inkpi.github.io/rpgGame/
+
 SlideShow
 https://1drv.ms/p/s!Alqa__6Qeq3XaNQTEW27aYu08b0
 
