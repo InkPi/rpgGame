@@ -97,7 +97,8 @@ form {
 }
 
 .dialogue {
-  background-color: white;
+  background-color: rgba(0,0,0,.4);
+  color: white;
 }
 
 /*https://www.w3schools.com/cssref/pr_pos_clip.asp*/
@@ -157,4 +158,278 @@ on a click event assign this class to a div you want to move*/
   position: fixed;
   height: 300px;
   width: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .playerDiv {
+    width: 400px;
+  }
+  .enemyDiv {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1163px) {
+  .enemyDiv {
+    margin-left: 840px;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  .playerDiv {
+    width: 385px;
+  }
+  .enemyDiv {
+    margin-left: 780px;
+  }
+}
+
+@media only screen and (max-width: 1048px) {
+  .playerDiv {
+    width: 385px;
+  }
+  .enemyDiv {
+    margin-left: 700px;
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  .playerDiv {
+    width: 370px;
+  }
+  .enemyDiv {
+    margin-left: 630px;
+  }
+}
+
+@media only screen and (max-width: 917px) {
+  .playerDiv {
+    width: 360px;
+  }
+  .enemyDiv {
+    margin-left: 580px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .playerDiv {
+    width: 350px;
+  }
+  .enemyDiv {
+    margin-left: 530px;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .playerDiv {
+    width: 330px;
+  }
+  .enemyDiv {
+    margin-left: 480px;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .playerDiv {
+    width: 320px;
+  }
+  .enemyDiv {
+    margin-left: 440px;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .playerDiv {
+    width: 300px;
+  }
+  .enemyDiv {
+    width: 240px;
+    margin-left: 400px;
+  }
+  .enemyDiv img {
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .playerDiv {
+    width: 270px;
+  }
+  .enemyDiv {
+    width: 210px;
+    margin-left: 400px;
+  }
+  .enemyDiv img {
+    margin-left: -30px;
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  .playerDiv {
+    width: 250px;
+  }
+  .enemyDiv {
+    width: 190px;
+    margin-left: 400px;
+  }
+  .enemyDiv img {
+    margin-left: -48px;
+    transform: scale(0.74);
+  }
+  .playerSide {
+    margin-left: -50px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .playerDiv {
+    width: 230px;
+  }
+  .enemyDiv {
+    width: 190px;
+    margin-left: 360px;
+  }
+  .enemyDiv img {
+    margin-left: -48px;
+    transform: scale(0.74);
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .playerDiv {
+    width: 230px;
+  }
+  .enemyDiv {
+    width: 190px;
+    margin-left: 360px;
+  }
+  .enemyDiv img {
+    margin-left: -48px;
+    transform: scale(0.74);
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .playerDiv {
+    width: 230px;
+  }
+  .enemyDiv {
+    width: 190px;
+    margin-left: 350px;
+  }
+  .enemyDiv img {
+    margin-left: -48px;
+    transform: scale(0.74);
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .playerDiv {
+    width: 230px;
+  }
+  .enemyDiv {
+    width: 190px;
+    margin-left: 350px;
+  }
+  .enemyDiv img {
+    margin-left: -48px;
+    transform: scale(0.74);
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .enemyDiv {
+    margin-left: 330px;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .enemyDiv {
+    margin-left: 317px;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .enemyDiv {
+    margin-left: 306px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .enemyDiv {
+    margin-left: 300px;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .enemyDiv {
+    margin-left: 290px;
+  }
+}
+
+@media only screen and (max-width: 493px) {
+  .playerDiv {
+    width: 200;
+  }
+  .enemyDiv {
+    width: 180px;
+    margin-left: 290px;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .enemyDiv {
+    margin-left: 280px;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .enemyDiv {
+    margin-left: 268px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .enemyDiv {
+    margin-left: 242px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .playerDiv {
+    width: 190px;
+  }
+  .enemyDiv {
+    width:170px;
+    margin-left: 242px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .playerDiv {
+    width: 180px;
+  }
+  .playerSide {
+    margin-left: -90px;
+  }
+  .enemyDiv {
+    margin-left: 220px;
+  }
+  .enemyDiv img {
+    margin-left: -70px;
+    transform: scale(0.60);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .playerDiv {
+    width: 180px;
+  }
+  .playerSide {
+    margin-left: -90px;
+  }
+  .enemyDiv {
+    margin-left: 210px;
+  }
 }
